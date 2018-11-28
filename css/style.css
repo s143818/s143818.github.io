@@ -75,7 +75,7 @@ hr {
 	width: 70px;
 	text-align: center;
 	position: relative;
-	background: #a7c44c;
+	background: #ff9900;
 	margin: 0 auto;
 	margin-bottom: 20px;
 	border: 0;
@@ -108,7 +108,7 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 }
 #menu.navbar-default .navbar-nav > li > a {
 	text-transform: uppercase;
-	color: #a7c44c;
+	color: #ff9900;
 	font-weight: 400;
 	font-size: 15px;
 	padding: 5px 0;
@@ -132,8 +132,8 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 	border-radius: 0;
 }
 .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
-	background-color: #a7c44c;
-	border-color: #a7c44c;
+	background-color: #ff9900;
+	border-color: #ff9900;
 }
 .navbar-default .navbar-toggle:hover>.icon-bar {
 	background-color: #FFF;
@@ -148,7 +148,7 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 	text-transform: uppercase;
 	color: #fff;
 	text-shadow: 0 0 3px #859c3c;
-	background-color: #a7c44c;
+	background-color: #ff9900;
 	border: 0;
 	padding: 14px 20px;
 	margin: 0;
@@ -159,14 +159,14 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 }
 .btn-custom:hover, .btn-custom:focus, .btn-custom.focus, .btn-custom:active, .btn-custom.active {
 	color: rgba(255,255,255,0.8);
-	background-color: #94ae44;
+	background-color: #e67300;
 }
 /* Header Section */
 .intro {
 	display: table;
 	width: 100%;
 	padding: 0;
-	background: url(../img/intro-bg.jpg) no-repeat center bottom;
+	background: url(../img/hiphop.jpg) no-repeat center bottom;
 	background-color: #e5e5e5;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
@@ -185,7 +185,7 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 	letter-spacing: -1px;
 }
 .intro span {
-	color: #a7c44c;
+	color: #ff9900;
 	font-weight: 600;
 }
 .intro p {
@@ -216,7 +216,7 @@ header .intro-text {
 #about img {
 	display: inline-block;
 	border-radius: 100px 0 100px 0;
-	box-shadow: -15px 0 #a7c44c;
+	box-shadow: -15px 0 #ff9900;
 }
 #about p {
 	line-height: 24px;
@@ -232,7 +232,7 @@ header .intro-text {
 #services img {
 	width: 300px;
 	border-radius: 75px 0 75px 0;
-	box-shadow: 15px 0 #a7c44c;
+	box-shadow: 15px 0 #ff9900;
 }
 #services h3 {
 	padding: 10px 0;
@@ -255,21 +255,21 @@ ol.type li {
 	margin-left: 20px;
 }
 ol.type li a {
-	color: #a7c44c;
+	color: #ff9900;
 	font-weight: 400;
 	font-size: 15px;
 	padding: 10px 20px;
-	border: 2px solid #a7c44c;
+	border: 2px solid #ff9900;
 	border-radius: 10px 0 10px 0;
 	text-transform: uppercase;
 	letter-spacing: 0.5px;
 }
 ol.type li a.active {
-	background: #a7c44c;
+	background: #ff9900;
 	color: #fff;
 }
 ol.type li a:hover {
-	background: #a7c44c;
+	background: #ff9900;
 	color: #fff;
 }
 .isotope-item {
@@ -347,7 +347,7 @@ ol.type li a:hover {
 /* Team Section */
 #team {
 	color: #fff;
-	background: #a7c44c url(../img/team-bg.jpg) center top no-repeat;
+	background: #ff9900 url(../img/team-bg.jpg) center top no-repeat;
 	background-size: cover;
 }
 #team .overlay {
@@ -469,7 +469,7 @@ color: #777;
 #footer .social i.fa {
 	font-size: 26px;
 	padding: 4px;
-	color: #a7c44c;
+	color: #ff9900;
 	transition: all 0.3s;
 }
 #footer .social i.fa:hover {
@@ -482,5 +482,5 @@ color: #777;
 	color: #999;
 }
 #footer a:hover {
-	color: #a7c44c;
+	color: #ff9900;
 }
