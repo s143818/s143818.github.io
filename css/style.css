@@ -238,6 +238,22 @@ header .intro-text {
 	padding: 10px 0;
 	text-transform: uppercase;
 }
+/* Services Section */
+#teamnot {
+	padding: 120px 0;
+}
+#teamnot .service {
+	padding-left: 40px;
+}
+#teamnot img {
+	width: 300px;
+	border-radius: 75px 0 75px 0;
+	box-shadow: 15px 0 #ff9900;
+}
+#teamnot h3 {
+	padding: 10px 0;
+	text-transform: uppercase;
+}
 /* Portfolio Section */
 #portfolio {
 	padding: 120px 0;
