@@ -40,7 +40,7 @@
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
-      <a class="navbar-brand page-scroll" href="#page-top">Hip Hop Hell</a> </div>
+      <a class="navbar-brand page-scroll" href="#page-top">Hip Hop</a> </div>
     
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -63,7 +63,7 @@
         <div class="row">
           <div class="intro-text">
             <h1><strong>Hip Hop</strong> <span>/</span> Basic facts</h1>
-            <p>How much have you heard about it.</p>
+            <p>How much have you heard about it?</p>
             <a href="#about" class="btn btn-custom btn-lg page-scroll">Learn More</a> </div>
         </div>
       </div>
@@ -74,17 +74,28 @@
 <div id="about">
   <div class="container">
     <div class="section-title text-center center">
-      <h2>Our Story</h2>
+      <h2>What on earth are we talking about?</h2>
       <hr>
     </div>
     <div class="row">
-      <div class="col-xs-12 col-md-6 text-center"> <img src="img/about.jpg" class="img-responsive" alt=""> </div>
-      <div class="col-xs-12 col-md-6">
+        
+      <div class="col-xs-12 col-md-4 text-center"> <p></p><img src="img/about.jpg" class="img-responsive" alt=""> </div>
+      <div class="col-xs-12 col-md-8">
         <div class="about-text">
-          <h3>Lorem ipsum</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed commodo nibh ante facilisis bibendum dolor feugiat at. Duis sed dapibus leo nec ornare diam commodo nibh.</p>
-          <h3>Lorem ipsum</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed commodo nibh ante facilisis bibendum dolor feugiat at. Duis sed dapibus leo nec ornare.</p>
+          <h3>Motivation and goal</h3>
+          <p>Music is an important part of the everyday life for most people. Whether it be music for a party, for the bus or the inescapable noice you hear in a telephone queue, it affects us in some way or another. But which words are we actually hearing when we put on our headphones? Are we exposing ourselves to positive or negative messages? Are we subconsciously choosing to listen to negative songs or postitive? And lastly how does the artists connect to one another, and what information can we derive from the different groupings? <br><br>
+
+These are the questions we seek to answer in this study and to do just that we need some data. But to get these data, we first need to limit our search. There are quite frankly too many artists across the world for us to take them all into account with the limited computer power that we possess, so in order to make it manageble we chose to focus on only one particular genre of music. 
+            </p>
+            <p style="text-align: center">
+
+                <b>Hip Hop</b></p>
+            <p>
+
+With it's rich history, interesting vocabulary and amazing artists we believe that we can uncover quite a lot of hidden secrets within this branch of music, as well as proving/disproving wether hip hop music is as violent/negative as people believe it to be.
+</p>
+          <h3>Dataset</h3>
+          <p>As mentioned, we are using the wikipedia list of important hip hop artists to limit the scope of artists in the hip hop genre. After that we are using the genius API to extract the necesary data and link the artists based on the collaborations they've had on songs. We're using the amount of collaboration between two artists as the weight of the link, and we are adding five attributes to each node: Popularity, followers, twitter-handle, facebook name and instagram-name. Each artist also have as attributes the songs they've made or collaborated on, and these songs have the attributes: hotness, pyongs, release date, page views, media platforms and title.</p>
         </div>
       </div>
     </div>
@@ -126,10 +137,12 @@
       <ul class="cat">
         <li>
           <ol class="type">
-            <li><a href="#" data-filter="*" class="active">All Projects</a></li>
-            <li><a href="#" data-filter=".residential">Residential</a></li>
+              
+            <li><a href="#" data-filter="*" class="active" style="pointer-events: none;
+   cursor: default;">Top 10 artists</a></li>
+            <!--<li><a href="#" data-filter=".residential">Residential</a></li>
             <li><a href="#" data-filter=".office">Office</a></li>
-            <li><a href="#" data-filter=".commercial">Commercial</a></li>
+            <li><a href="#" data-filter=".commercial">Commercial</a></li>-->
           </ol>
         </li>
       </ul>
@@ -139,110 +152,92 @@
       <div class="portfolio-items">
         <div class="col-sm-6 col-md-4 col-lg-4 residential">
           <div class="portfolio-item">
-            <div class="hover-bg"> <a href="img/portfolio/01-large.jpg" title="Project Title" data-lightbox-gallery="gallery1">
+            <div class="hover-bg"> <a href="img/portfolio/01-large.jpg" title="Big Daddy Kane" data-lightbox-gallery="gallery1">
               <div class="hover-text">
-                <h4>Project Name</h4>
+                <h4>Big Daddy Kane</h4>
               </div>
-              <img src="img/portfolio/01-small.jpg" class="img-responsive" alt="Project Title"> </a> </div>
+              <img src="img/portfolio/01-small.jpg" class="img-responsive" alt="Big Daddy Kane"> </a> </div>
           </div>
         </div>
         <div class="col-sm-6 col-md-4 col-lg-4 commercial">
           <div class="portfolio-item">
-            <div class="hover-bg"> <a href="img/portfolio/02-large.jpg" title="Project Title" data-lightbox-gallery="gallery1">
+            <div class="hover-bg"> <a href="img/portfolio/02-large.jpg" title="The Notorious B.I.G." data-lightbox-gallery="gallery1">
               <div class="hover-text">
-                <h4>Project Name</h4>
+                <h4>The Notorious B.I.G.</h4>
               </div>
-              <img src="img/portfolio/02-small.jpg" class="img-responsive" alt="Project Title"> </a> </div>
+              <img src="img/portfolio/02-small.jpg" class="img-responsive" alt="The Notorious B.I.G."> </a> </div>
           </div>
         </div>
         <div class="col-sm-6 col-md-4 col-lg-4 residential">
           <div class="portfolio-item">
-            <div class="hover-bg"> <a href="img/portfolio/03-large.jpg" title="Project Title" data-lightbox-gallery="gallery1">
+            <div class="hover-bg"> <a href="img/portfolio/03-large.jpg" title="Eminem" data-lightbox-gallery="gallery1">
               <div class="hover-text">
-                <h4>Project Name</h4>
+                <h4>Eminem</h4>
               </div>
-              <img src="img/portfolio/03-small.jpg" class="img-responsive" alt="Project Title"> </a> </div>
+              <img src="img/portfolio/03-small.jpg" class="img-responsive" alt="Eminem"> </a> </div>
           </div>
         </div>
         <div class="col-sm-6 col-md-4 col-lg-4 residential">
           <div class="portfolio-item">
-            <div class="hover-bg"> <a href="img/portfolio/04-large.jpg" title="Project Title" data-lightbox-gallery="gallery1">
+            <div class="hover-bg"> <a href="img/portfolio/04-large.jpg" title="Ice Cube" data-lightbox-gallery="gallery1">
               <div class="hover-text">
-                <h4>Project Name</h4>
+                <h4>Ice Cube</h4>
               </div>
-              <img src="img/portfolio/04-small.jpg" class="img-responsive" alt="Project Title"> </a> </div>
+              <img src="img/portfolio/04-small.jpg" class="img-responsive" alt="Ice Cube"> </a> </div>
           </div>
         </div>
         <div class="col-sm-6 col-md-4 col-lg-4 commercial">
           <div class="portfolio-item">
-            <div class="hover-bg"> <a href="img/portfolio/05-large.jpg" title="Project Title" data-lightbox-gallery="gallery1">
+            <div class="hover-bg"> <a href="img/portfolio/05-large.jpg" title="Jay-Z" data-lightbox-gallery="gallery1">
               <div class="hover-text">
-                <h4>Project Name</h4>
+                <h4>Jay-Z</h4>
               </div>
-              <img src="img/portfolio/05-small.jpg" class="img-responsive" alt="Project Title"> </a> </div>
+              <img src="img/portfolio/05-small.jpg" class="img-responsive" alt="Jay-Z"> </a> </div>
           </div>
         </div>
         <div class="col-sm-6 col-md-4 col-lg-4 office">
           <div class="portfolio-item">
-            <div class="hover-bg"> <a href="img/portfolio/06-large.jpg" title="Project Title" data-lightbox-gallery="gallery1">
+            <div class="hover-bg"> <a href="img/portfolio/06-large.jpg" title="KRS-One" data-lightbox-gallery="gallery1">
               <div class="hover-text">
-                <h4>Project Name</h4>
+                <h4>KRS-One</h4>
               </div>
-              <img src="img/portfolio/06-small.jpg" class="img-responsive" alt="Project Title"> </a> </div>
+              <img src="img/portfolio/06-small.jpg" class="img-responsive" alt="KRS-One"> </a> </div>
           </div>
         </div>
         <div class="col-sm-6 col-md-4 col-lg-4 office">
           <div class="portfolio-item">
-            <div class="hover-bg"> <a href="img/portfolio/07-large.jpg" title="Project Title" data-lightbox-gallery="gallery1">
+            <div class="hover-bg"> <a href="img/portfolio/07-large.jpg" title="Melle Mel" data-lightbox-gallery="gallery1">
               <div class="hover-text">
-                <h4>Project Name</h4>
+                <h4>Melle Mel</h4>
               </div>
-              <img src="img/portfolio/07-small.jpg" class="img-responsive" alt="Project Title"> </a> </div>
+              <img src="img/portfolio/07-small.jpg" class="img-responsive" alt="Melle Mel"> </a> </div>
           </div>
         </div>
         <div class="col-sm-6 col-md-4 col-lg-4 residential">
           <div class="portfolio-item">
-            <div class="hover-bg"> <a href="img/portfolio/08-large.jpg" title="Project Title" data-lightbox-gallery="gallery1">
+            <div class="hover-bg"> <a href="img/portfolio/08-large.jpg" title="Nas" data-lightbox-gallery="gallery1">
               <div class="hover-text">
-                <h4>Project Name</h4>
+                <h4>Nas</h4>
               </div>
-              <img src="img/portfolio/08-small.jpg" class="img-responsive" alt="Project Title"> </a> </div>
+              <img src="img/portfolio/08-small.jpg" class="img-responsive" alt="Nas"> </a> </div>
           </div>
         </div>
         <div class="col-sm-6 col-md-4 col-lg-4 commercial">
           <div class="portfolio-item">
-            <div class="hover-bg"> <a href="img/portfolio/09-large.jpg" title="Project Title" data-lightbox-gallery="gallery1">
+            <div class="hover-bg"> <a href="img/portfolio/09-large.jpg" title="Rakim" data-lightbox-gallery="gallery1">
               <div class="hover-text">
-                <h4>Project Name</h4>
+                <h4>Rakim</h4>
               </div>
-              <img src="img/portfolio/09-small.jpg" class="img-responsive" alt="Project Title"> </a> </div>
+              <img src="img/portfolio/09-small.jpg" class="img-responsive" alt="Rakim"> </a> </div>
           </div>
         </div>
         <div class="col-sm-6 col-md-4 col-lg-4 office">
           <div class="portfolio-item">
-            <div class="hover-bg"> <a href="img/portfolio/10-large.jpg" title="Project Title" data-lightbox-gallery="gallery1">
+            <div class="hover-bg"> <a href="img/portfolio/10-large.jpg" title="Tupac Shakur" data-lightbox-gallery="gallery1">
               <div class="hover-text">
-                <h4>Project Name</h4>
+                <h4>Tupac Shakur</h4>
               </div>
-              <img src="img/portfolio/10-small.jpg" class="img-responsive" alt="Project Title"> </a> </div>
-          </div>
-        </div>
-        <div class="col-sm-6 col-md-4 col-lg-4 office">
-          <div class="portfolio-item">
-            <div class="hover-bg"> <a href="img/portfolio/11-large.jpg" title="Project Title" data-lightbox-gallery="gallery1">
-              <div class="hover-text">
-                <h4>Project Name</h4>
-              </div>
-              <img src="img/portfolio/11-small.jpg" class="img-responsive" alt="Project Title"> </a> </div>
-          </div>
-        </div>
-        <div class="col-sm-6 col-md-4 col-lg-4 residential">
-          <div class="portfolio-item">
-            <div class="hover-bg"> <a href="img/portfolio/12-large.jpg" title="Project Title" data-lightbox-gallery="gallery1">
-              <div class="hover-text">
-                <h4>Project Name</h4>
-              </div>
-              <img src="img/portfolio/12-small.jpg" class="img-responsive" alt="Project Title"> </a> </div>
+              <img src="img/portfolio/10-small.jpg" class="img-responsive" alt="Tupac Shakur"> </a> </div>
           </div>
         </div>
       </div>

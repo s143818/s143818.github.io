@@ -352,7 +352,7 @@ ol.type li a:hover {
 }
 #team .overlay {
 	padding: 120px 0;
-	background: rgba(167, 196, 76, 0.9);
+	background: rgba(255, 163, 26, 0.8);
 }
 #team h2, #team p {
 	color: #fff;
@@ -370,7 +370,7 @@ ol.type li a:hover {
 	width: 200px;
 	height: 200px;
 	border-radius: 50px 0 50px 0;
-	box-shadow: 15px 0 #96b044;
+	box-shadow: 15px 0 #ff9900;
 }
 #team .thumbnail {
 	background: transparent;
