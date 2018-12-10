@@ -46,7 +46,7 @@
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav navbar-right">
         <li><a href="#about" class="page-scroll">About</a></li>
-        <li><a href="#services" class="page-scroll">Network stats</a></li>
+        <li><a href="#network" class="page-scroll">Network stats</a></li>
         <li><a href="#portfolio" class="page-scroll">Community detection</a></li>
         <li><a href="#teamnot" class="page-scroll">Frequent terms</a></li>
         <li><a href="#contact" class="page-scroll">Sentiment</a></li>
@@ -94,6 +94,17 @@ These are the questions we seek to answer in this study and to do just that we n
 
 With it's rich history, interesting vocabulary and amazing artists we believe that we can uncover quite a lot of hidden secrets within this branch of music, as well as proving/disproving wether hip hop music is as violent/negative as people believe it to be.
 </p>
+        </div>
+      </div>
+    </div>
+      
+          <div class="row">
+        
+      <div class="col-xs-12 col-md-4 text-center"> <p></p><img src="img/data.jpg" class="img-responsive" alt=""> </div>
+      <div class="col-xs-12 col-md-8">
+        <div class="about-text">
+     
+
           <h3>Dataset</h3>
           <p>As mentioned, we are using the wikipedia list of important hip hop artists to limit the scope of artists in the hip hop genre. After that we are using the genius API to extract the necesary data and link the artists based on the collaborations they've had on songs. We're using the amount of collaboration between two artists as the weight of the link, and we are adding five attributes to each node: Popularity, followers, twitter-handle, facebook name and instagram-name. Each artist also have as attributes the songs they've made or collaborated on, and these songs have the attributes: hotness, pyongs, release date, page views, media platforms and title.</p>
         </div>
@@ -102,27 +113,54 @@ With it's rich history, interesting vocabulary and amazing artists we believe th
   </div>
 </div>
 <!-- Services Section -->
-<div id="services">
+<div id="network">
   <div class="container">
     <div class="col-md-10 col-md-offset-1 section-title text-center">
       <h2>Network</h2>
       <hr>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit duis sed dapibus leonec.</p>
+      <p>Using this information we created a graph consisting of 1062 nodes and 
+12226 edges as seen below.</p>
+    </div>
+      
+      
+      <div class="categories">
+      <ul class="cat1">
+        <li>
+          <ol class="type">
+              
+            <!--<li><a href="#" data-filter="*" class="active" style="pointer-events: none;
+   cursor: default;">Top 10 artists</a></li>-->
+            <li><a href="#" data-filter=".residential" class="active">Network</a></li>
+            <li><a href="#" data-filter=".office">Communities</a></li>
+            <li><a href="#" data-filter=".commercial">Hot or not</a></li>
+          </ol>
+        </li>
+      </ul>
+      <div class="clearfix"></div>
     </div>
     <div class="row">
-      <div class="col-xs-12 col-sm-4 service"> <img src="img/residential-design.jpg" class="img-responsive" alt="Project Title">
-        <h3>Residential Design</h3>
-        <p>Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam. Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend.</p>
+      <div class="portfolio-items1">
+        <div class="col-sm-12 col-md-12 col-lg-12 residential">
+          <div class="portfolio-item1">
+            <div class="hover-bg"> 
+              <img src="img/degreeNodes.png" class="img-responsive" alt="Big Daddy Kane">  </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-12 col-lg-12 office">
+          <div class="portfolio-item1">
+            <div class="hover-bg"> 
+              <img src="img/graphcommunities.png" class="img-responsive" alt="Communities"> </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-12 col-lg-12 commercial">
+          <div class="portfolio-item1">
+            <div class="hover-bg"> 
+              <img src="img/graphblue.png" class="img-responsive" alt="Hotness"> </div>
+          </div>
+        </div>
       </div>
-      <div class="col-xs-12 col-sm-4 service"> <img src="img/office-design.jpg" class="img-responsive" alt="Project Title">
-        <h3>Office Design</h3>
-        <p>Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam. Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend.</p>
-      </div>
-      <div class="col-xs-12 col-sm-4 service"> <img src="img/commercial-design.jpg" class="img-responsive" alt="Project Title">
-        <h3>Commercial Design</h3>
-        <p>Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam. Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend.</p>
-      </div>
-    </div>
+        </div>
+   
   </div>
 </div>
 <!-- Portfolio Section -->
