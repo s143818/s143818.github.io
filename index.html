@@ -144,7 +144,7 @@ With it's rich history, interesting vocabulary and amazing artists we believe th
           <div class="portfolio-item1">
             <div class="hover-bg text-center"> 
               <img src="img/degreeNodes.png" class="img-responsive" alt="Big Daddy Kane">  
-              <p>
+              <p><b><orange>Our network</orange></b><br>
                 Here we see the network of artists and the songs that they have collaborated on and that therefore connect them. At the edges of the graph, small nodes can be seen without any connections, this can occur if an artist hasn't collaborated with anyone, perhaps because they are unpopular, do not use the Genius platform or simply likes doing things alone.<br><br></p></div>
           </div>
         </div>
@@ -152,15 +152,19 @@ With it's rich history, interesting vocabulary and amazing artists we believe th
           <div class="portfolio-item1">
             <div class="hover-bg text-center"> 
               <img src="img/graphcommunities.png" class="img-responsive" alt="Communities"> 
-              <p>and here<br><br></p></div>
+              <p><p><b><orange>Communities</orange></b><br>
+                Communities in dense networks can often be hard to see with the naked eye. The concept is based on the fact that within any network there will be some groups of nodes that are more densely connected than others, this can in this case be caused by the fact that some artists are better friends with one another than others, or maybe because some artists are connected through their chosen genre. <br>
+                We have decided to check if the latter is true... REMEMBER TO WRITE.<br><br></p></div>
           </div>
         </div>
         <div class="col-sm-12 col-md-12 col-lg-12 commercial">
           <div class="portfolio-item1">
             <div class="hover-bg text-center"> 
-              <img src="img/graphblue.png" class="img-responsive" alt="Hotness">
-              <p>
-                 and also here<br><br></p></div>
+              <img src="img/HotDegreeNodes.png" class="img-responsive" alt="Hotness">
+              <p><p><b><red>HOT</red> or <orange>NOT</orange></b><br>
+                 On genius there is an attribute for each song that denotes the song hot or not. In this graph we see <orange>all the artists who does <b>NOT</b> have any hot songs colored orange</orange>, and <red>the <b>HOT</b> artists are colored in red.</red><br>
+                  As seen on the graph genius only thinks that four artists got what it takes namely: Eminem, Travis Scott, XXXTENTACION and Mariah Carey (which could have something to do with the fact that we pulled this information close to christmas).<br>
+              This however only seem to prove that maybe the genius attribute isn't that much to go on, when only 4 out of 110632 songs were shown as being hot.<br><br></p></div>
           </div>
         </div>
       </div>
@@ -169,28 +173,54 @@ With it's rich history, interesting vocabulary and amazing artists we believe th
       <div class="row">
         
       <div class="col-xs-12 col-sm-6 service"> 
-        <h3>Degree distribution</h3>
-        <p>Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam. Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend.</p>
+        <h3>Degree distribution linear axis</h3>
+        
           <img src="img/DegreeLinear.png" class="img-responsive" alt="Degree distribution shown with linear scale">
       </div>
       <div class="col-xs-12 col-sm-6 service"> 
         <h3>Degree distribution log log scale</h3>
-        <p>Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam. Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend.</p>
-          <img src="img/DegreeLogLog.png" class="img-responsive" alt="Degree distribution shown with log log scale">
+        
+          <img src="img/DegreeLogLog.png" class="img-responsive" alt="Degree distribution shown with log log axis">
+      </div>
+      </div>
+      <div class="row">
+      <div class="col-xs-12 col-sm-12 service"> 
+      
+      <p>Above is two plots of the degree distribution. The degree distribution in this case describes the amount of unique people an artist have collaborated with. As it can be seen on the graph the degree distribution follows a power law distribution. This means that if an artist in the network is popular, then he or she is more likely to make new collaborations that others. This can be easily translated to the graph as more artist would have a desire to collaborate with more well known artists either to boost their own success through their followers, or simply because they would be more likely to have heard of a popular artist that matched a certain music style. This results in a distribution where a lot of the artist only have one or two connections, whilst popular artists can have up to 250 collaborations with.</p>
       </div>
       </div>
       <div class="row">
       <div class="col-xs-12 col-sm-6 service"> 
         <h3>Strength distribution</h3>
-        <p>Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam. Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend.</p>
+        
           <img src="img/StrengthLinear.png" class="img-responsive" alt="Strength distribution shown with linear scale">
       </div>
       <div class="col-xs-12 col-sm-6 service"> 
         <h3>Strength distribution log log</h3>
-        <p>Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam. Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend.</p>
+        
           <img src="img/StrengthLogLog.png" class="img-responsive" alt="Strength distribution shown with log log scale">
       </div>
       </div>
+      <div class="row">
+      <div class="col-xs-12 col-sm-12 service"> 
+      
+      <p>Above is two plots of the strength distribution. The difference between the degree distribution and the strength distribution is that where the degree distribution focuses on how many artists an artist have collaborated on, the strength focuses on how many song an artist has collaborated on.<br>As seen above the strength distribution also follows a power law distribution.<br><br></p>
+      </div>
+      </div>
+      
+      <div class="col-xs-12 col-sm-12 service"> 
+          <div class="hover-bg text-center"> 
+        <h3>Cliques</h3>
+          </div>
+        <div class="""slidecontainer">
+  <input type="range" min="3" max="14" value="9" class="slider" id="myRange">
+  <p>Value: <b><span id="demo"></span></b></p>
+</div>
+          <img id="sliderimg" src="img/clique09.png" class="img-responsive" alt="Degree distribution shown with linear scale">
+      </div>
+      
+      </div>
+      
   </div>
 </div>
 <!-- Portfolio Section -->
@@ -202,42 +232,45 @@ With it's rich history, interesting vocabulary and amazing artists we believe th
          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit duis sed dapibus leonec.</p>
         <div class="container">
              
-  <h2>Responsive Tables Using LI <small>Triggers on 767px</small></h2>
+  <!--<h4>Responsive Tables Using LI <small>Triggers on 767px</small></h4>-->
+            <h3>Top collaborating artists</h3>
+             </div>
   <ul class="responsive-table">
     <li class="table-header">
-      <div class="col col-1">Job Id</div>
-      <div class="col col-2">Customer Name</div>
-      <div class="col col-3">Amount Due</div>
-      <div class="col col-4">Payment Status</div>
+        <div class="col col-1">No.</div>
+      <div class="col col-2">Artist</div>
+      <div class="col col-3">Collaborations</div>
     </li>
     <li class="table-row">
-      <div class="col col-1" data-label="Job Id">42235</div>
-      <div class="col col-2" data-label="Customer Name">John Doe</div>
-      <div class="col col-3" data-label="Amount">$350</div>
-      <div class="col col-4" data-label="Payment Status">Pending</div>
+        <div class="col col-1" data-label="Job Id">1</div>
+      <div class="col col-2" data-label="Job Id">Lil Wayne</div>
+      <div class="col col-3" data-label="Customer Name">856</div>
+
     </li>
     <li class="table-row">
-      <div class="col col-1" data-label="Job Id">42442</div>
-      <div class="col col-2" data-label="Customer Name">Jennifer Smith</div>
-      <div class="col col-3" data-label="Amount">$220</div>
-      <div class="col col-4" data-label="Payment Status">Pending</div>
+      <div class="col col-1" data-label="Job Id">2</div>
+      <div class="col col-2" data-label="Customer Name">Gucci Mane</div>
+<div class="col col-3" data-label="Customer Name">697</div>
     </li>
     <li class="table-row">
-      <div class="col col-1" data-label="Job Id">42257</div>
-      <div class="col col-2" data-label="Customer Name">John Smith</div>
-      <div class="col col-3" data-label="Amount">$341</div>
-      <div class="col col-4" data-label="Payment Status">Pending</div>
+      <div class="col col-1" data-label="Job Id">3</div>
+      <div class="col col-2" data-label="Customer Name">Rick Ross</div>
+<div class="col col-3" data-label="Customer Name">644</div>
     </li>
     <li class="table-row">
-      <div class="col col-1" data-label="Job Id">42311</div>
-      <div class="col col-2" data-label="Customer Name">John Carpenter</div>
-      <div class="col col-3" data-label="Amount">$115</div>
-      <div class="col col-4" data-label="Payment Status">Pending</div>
+      <div class="col col-1" data-label="Job Id">4</div>
+      <div class="col col-2" data-label="Customer Name">Snoop Dogg</div>
+<div class="col col-3" data-label="Customer Name">586</div>
+    </li>
+      <li class="table-row">
+      <div class="col col-1" data-label="Job Id">5</div>
+      <div class="col col-2" data-label="Customer Name">The Game</div>
+<div class="col col-3" data-label="Customer Name">502</div>
     </li>
   </ul>
 </div>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit duis sed dapibus leonec.</p>
-    </div>
+   
    
 
   </div>
@@ -434,64 +467,11 @@ With it's rich history, interesting vocabulary and amazing artists we believe th
     </div>
   </div>
 </div>
-<!-- Contact Section 
-<div id="contact">
-  <div class="container">
-    <div class="section-title text-center">
-      <h2>Sentiment analysis</h2>
-      <hr>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit duis sed dapibus leonec.</p>
-    </div>
-    <div class="col-md-4">
-      <h3>Contact Info</h3>
-      <div class="contact-item"> <span>Address</span>
-        <p>4321 California St,<br>
-          San Francisco, CA 12345</p>
-      </div>
-      <div class="contact-item"> <span>Email</span>
-        <p>info@company.com</p>
-      </div>
-      <div class="contact-item"> <span>Phone</span>
-        <p> +1 123 456 1234</p>
-      </div>
-    </div>
-    <div class="col-md-8">
-      <h3>Leave us a message</h3>
-      <form name="sentMessage" id="contactForm" novalidate>
-        <div class="row">
-          <div class="col-md-6">
-            <div class="form-group">
-              <input type="text" id="name" class="form-control" placeholder="Name" required="required">
-              <p class="help-block text-danger"></p>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="form-group">
-              <input type="email" id="email" class="form-control" placeholder="Email" required="required">
-              <p class="help-block text-danger"></p>
-            </div>
-          </div>
-        </div>
-        <div class="form-group">
-          <textarea name="message" id="message" class="form-control" rows="4" placeholder="Message" required></textarea>
-          <p class="help-block text-danger"></p>
-        </div>
-        <div id="success"></div>
-        <button type="submit" class="btn btn-custom btn-lg">Send Message</button>
-      </form>
-    </div>
-  </div>
-</div>-->
+
 <div id="footer">
   <div class="container text-center">
     <div class="social">
-      <!--<ul>
-        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-        <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-        <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
-        <li><a href="#"><i class="fa fa-youtube"></i></a></li>
-      </ul>-->
+
     </div>
     <div>
       <p>&copy; 2018 Sociale grafer. No rights reserved.</p>

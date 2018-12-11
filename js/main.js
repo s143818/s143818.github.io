@@ -42,6 +42,42 @@ function main() {
     }
   });
 	
+    // Slider
+    var slider = document.getElementById("myRange");
+    var output = document.getElementById("demo");
+    output.innerHTML = slider.value;
+
+    slider.oninput = function() {
+      output.innerHTML = this.value;
+      if (this.value == 3){
+          $("#sliderimg").attr("src","img/clique03.png");
+      } else if (this.value == 4){
+          $("#sliderimg").attr("src","img/clique04.png");
+      } else if (this.value == 5){
+          $("#sliderimg").attr("src","img/clique05.png");
+      } else if (this.value == 6){
+          $("#sliderimg").attr("src","img/clique06.png");
+      } else if (this.value == 7){
+          $("#sliderimg").attr("src","img/clique07.png");
+      } else if (this.value == 8){
+          $("#sliderimg").attr("src","img/clique08.png");
+      } else if (this.value == 9){
+          $("#sliderimg").attr("src","img/clique09.png");
+      } else if (this.value == 10){
+          $("#sliderimg").attr("src","img/clique10.png");
+      } else if (this.value == 11){
+          $("#sliderimg").attr("src","img/clique11.png");
+      } else if (this.value == 12){
+          $("#sliderimg").attr("src","img/clique12.png");
+      } else if (this.value == 13){
+          $("#sliderimg").attr("src","img/clique13.png");
+      } else if (this.value == 14){
+          $("#sliderimg").attr("src","img/clique14Zoomed.png");
+      }
+        
+    }
+    
+    
   	// Portfolio isotope filter
     $(window).load(function() {
         var $container = $('.portfolio-items');
