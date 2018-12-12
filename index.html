@@ -106,7 +106,7 @@ With it's rich history, interesting vocabulary and amazing artists we believe th
      
 
           <h3>Dataset</h3>
-          <p>As mentioned, we are using the wikipedia list of important hip hop artists to limit the scope of artists in the hip hop genre. After that we are using the genius API to extract the necesary data and link the artists based on the collaborations they've had on songs. We're using the amount of collaboration between two artists as the weight of the link, and we are adding five attributes to each node: Popularity, followers, twitter-handle, facebook name and instagram-name. Each artist also have as attributes the songs they've made or collaborated on, and these songs have the attributes: hotness, pyongs, release date, page views, media platforms and title.</p>
+          <p>As mentioned, we are using the wikipedia list of important hip hop artists to limit the scope of artists in the hip hop genre. After that we are using the genius API to extract the necesary data and link the artists based on the collaborations they've had on songs. We're using the amount of collaboration between two artists as the weight of the link, and we are adding five attributes to each node: Popularity, followers, twitter-handle, subgenre and instagram-name. Each artist also have as attributes the songs they've made or collaborated on, and these songs have the attributes: hotness, pyongs, release date, page views, media platforms and title.<br>Read more about the dataset and the lyrics and attribute cleaning in the explainer notebook (link above)</p>
         </div>
       </div>
     </div>
@@ -154,10 +154,10 @@ With it's rich history, interesting vocabulary and amazing artists we believe th
           <div class="portfolio-item1">
             <div class="hover-bg text-center"> 
               <img src="img/graphcommunities.png" class="img-responsive" alt="Communities"> 
-              <p><p><b><orange>Communities</orange></b><br>
+              <p><p><b><orange>Communities (SCROLL DOWN for pie charts)</orange></b><br>
                 Communities in dense networks can often be hard to see with the naked eye. The concept is based on the fact that within any network there will be some groups of nodes that are more densely connected than others, this can in this case be caused by the fact that some artists are better friends with one another than others, or maybe because some artists are connected through their chosen genre. <br>
                 In the graph above 110 different communities were found, this number is of course also influenced by the amount of people who has no actual connection to the graph.<br>
-                We have decided to check if the artists are in fact connected through their genres. Below is twelwe pie charts that show the overall distribution of genres over the members of the six biggest communities. The first piechart includes the rap category, but since it takes up the majority of the chart we decided to omit it in the second version.<br><br>This means that for each community there are two pie charts, and the further down you look the smaller the communities.</p></div>
+                We have decided to check if the artists are in fact connected through their subgenres. Below is twelwe pie charts that show the overall distribution of genres over the members of the six biggest communities. The first piechart includes the rap category, but since it takes up the majority of the chart we decided to omit it in the second version.<br><br>This means that for each community there are two pie charts, and the further down you look the smaller the communities.</p></div>
               
               
               <div class="col-sm-6 col-md-6 col-lg-6 followers">
@@ -331,7 +331,7 @@ With it's rich history, interesting vocabulary and amazing artists we believe th
       <div class="row">
       <div class="col-xs-12 col-sm-12 service"> 
       
-      <p>Above is two plots of the strength distribution. The difference between the degree distribution and the strength distribution is that where the degree distribution focuses on how many artists an artist have collaborated on, the strength focuses on how many song an artist has collaborated on.<br>As seen above the strength distribution also follows a power law distribution.<br><br></p>
+      <p>Above is two plots of the strength distribution. The difference between the degree distribution and the strength distribution, is that where the degree distribution focuses on how many artists an artist have collaborated with. The strength focuses on how many songs an artist has collaborated on.<br>As seen above the strength distribution also follows a power law distribution.<br><br></p>
       </div>
       </div>
       
@@ -482,8 +482,8 @@ With it's rich history, interesting vocabulary and amazing artists we believe th
   </ul>
 
 <p>.</p>
-      <h3>Top Page Views</h3>
-            <p style="text-align: left">This is the artists that have the most page views based on the pageviews of all their songs. </p>
+      <h3>Top Total Page Views</h3>
+            <p style="text-align: left">This is the top artists that have the highest total page views based on the page views of all their songs. </p>
              
   <ul class="responsive-table">
     <li class="table-header">
@@ -520,7 +520,7 @@ With it's rich history, interesting vocabulary and amazing artists we believe th
   </ul>
             
             <p>.</p>
-      <h3>Top Mean Page View per Song</h3>
+      <h3>Top Mean of Song Page Views</h3>
             <p style="text-align: left">This is the artists that have the most mean pageviews based on the mean of page views of all their songs. </p>
              
   <ul class="responsive-table">
@@ -569,7 +569,7 @@ With it's rich history, interesting vocabulary and amazing artists we believe th
     <div class="col-md-10 col-md-offset-1 section-title text-center">
       <h2>Frequent terms</h2>
       <hr>
-      <p>Based on the lyricks from 110632 songs we found the most frequently used words amongst each artist. Here's the top most used words for the top ten hip hop artists. as well as a little insight into Snoop Doggs music career based on the words he has used over the years.</p>
+      <p>Based on the lyrics from 110632 songs we found the most frequently used words amongst each artist. Here's the top most used words for the top ten hip hop artists. as well as a little insight into Snoop Doggs music career based on the words he has used over the years.</p>
     </div>
     <div class="categories">
       <ul class="cat">
@@ -777,7 +777,7 @@ With it's rich history, interesting vocabulary and amazing artists we believe th
     <div class="section-title text-center center">
       <h2>Sentiment Analysis</h2>
       <hr>
-      <p>A sentiment analysis is an analysis of wether a text is positive or negative. We use a sentiment dictionary, which is a list of words that have been rated by unpaid first year psykology students on a scale from 1 to 9 in how they were affected by the word. This list is the basis for the analysis and </p>
+      <p>A sentiment analysis is an analysis of wether a text is positive or negative. We use a sentiment dictionary, which is a list of words that have been rated by unpaid first year psychology students on a scale from 1 to 9 in how they were affected by the word. This list is the basis for the analysis and </p>
     </div>
        <div class="row">
       <div class="col-xs-12 col-sm-12 service"> 
