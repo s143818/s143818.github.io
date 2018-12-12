@@ -211,14 +211,15 @@ With it's rich history, interesting vocabulary and amazing artists we believe th
       <div class="col-xs-12 col-sm-12 service"> 
           <div class="hover-bg text-center"> 
         <h3>Cliques</h3>
+		<p>Even if the degree distribution follows a power law distribution, meaning that a lot of nodes only have very few links, the graph is still full of connections. There are a lot of ways to group artists together such as the community method as seen above. Another way includes a specific centrality measure, mainly cliques. A clique is a group of artists where all the artists have connections to all other artists in the clique. If you were to move the slider beneath you would notice that both the value and the graph is changing. The value shows how big cliques we are looking for, if we have a value of three, and an artist is visible, then it means that the artist is a part of one or multiple three-artist-cliques where everyone is connected to oneanother. As the value reach fourteen you will see the names of the people in the largest clique.<br><br></p>
           </div>
         <div class="""slidecontainer">
   <input type="range" min="3" max="14" value="9" class="slider" id="myRange">
-  <p>Value: <b><span id="demo"></span></b></p>
+  <p><br>Value: <b><span id="demo"></span></b></p>
 </div>
           <img id="sliderimg" src="img/clique09.png" class="img-responsive" alt="Degree distribution shown with linear scale">
       </div>
-      
+      <p>Based on these graphs we can conclude that even though a lot of nodes do not have a high degree, then they are still quite connected to the rest of the graph considering that GET A PERCENTAGE of the nodes is in a 3-clique, and GET ANOTHER NUMBER is in a 4-clique. We can also conclude that the most interconnected artist, aka the ones in the 14-clique are quite famous artists.</p>
       </div>
       
   </div>
